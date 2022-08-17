@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div class="container">
       <div>
-      <h1>hello world!</h1>
+      <header>AppIcon Time Counter</header>
       <p></p>
       </div>
     </div>
