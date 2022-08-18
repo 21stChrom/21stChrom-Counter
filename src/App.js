@@ -17,7 +17,20 @@ export default function App() {
       </head>
       <div>
       <header>AppIcon Time Counter</header>
-      <div></div>
+
+
+      <div class="counterbox">
+      <div>
+
+      </div>
+      <div>
+      <button>Inc.</button>
+      <button>Dec.</button>
+      <button>Res.</button>
+     </div>
+     </div>
+
+     
       <div></div>
       <div></div>
       <div></div>
