@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "react": "^18.1.0",
+    "react-build": "^1.0.8",
     "react-dom": "^18.1.0"
   },
   "scripts": {

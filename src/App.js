@@ -1,43 +1,31 @@
-import React from "react";
-import "./style.css";
-
+import  React, {useState}  from 'react'
+ import "./style.css"
 export default function App() {
+  const [counter, setCounter] = useState(0);
+ 
+
+  const increase = () => {
+    setCounter(count => count + 1);
+  };
+
+const decrease = () => {
+  if (counter > 0) {
+    setCounter(count => count - 1);
+  }
+};
+ 
+  const reset = () => {
+    setCounter(0)
+  }
   return (
-    <div class="container">
-      <head>
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="manifest" href="/site.webmanifest" />
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-<meta name="msapplication-TileColor" content="#2d89ef" />
-<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
-<meta name="theme-color" content="#ffffff" />
-        <title>Parkers App</title>
-      </head>
-      <div>
-      <header>AppIcon Time Counter</header>
-
-
-      <div class="counterbox">
-      <div>
-
-      </div>
-      <div>
-      <button>Inc.</button>
-      <button>Dec.</button>
-      <button>Res.</button>
-     </div>
-     </div>
-
-     
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="counter">
+      <h1>Counter</h1>
+      <span class="counter__output">{counter}</span>
+      <div class="btn__container">
+        <button class="control__btn" onClick={increase}>+</button>
+        <button class="control__btn" onClick={decrease}>-</button>
+        <button class="reset" onClick={reset}>Reset</button>
       </div>
     </div>
   );
-}
+};
