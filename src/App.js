@@ -19,7 +19,7 @@ const decrease = () => {
   }
   return (
     <div class="counter">
-      <h1>Counter</h1>
+      <h1>Count</h1>
       <span class="counter__output">{counter}</span>
       <div class="btn__container">
         <button class="control__btn" onClick={increase}>+</button>
