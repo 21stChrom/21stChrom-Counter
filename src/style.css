@@ -14,7 +14,9 @@ p {
   text-align: center;
   row-gap: 20px;
 }
-
+.fs{
+  margin-top: 50px;
+}
 .counter h1 {
   color: rgb(16, 0, 54);
   font-size: 40px;
