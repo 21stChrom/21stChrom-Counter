@@ -4,7 +4,7 @@ p {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container{
-  
+  overflow: hidden;
 }
 .counter {
   width: 100%;
