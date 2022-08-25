@@ -14,7 +14,7 @@ p {
 .counter {
 box-shadow: 1px 1px 8px 8px;
   height: 50vh;
-  width: 99%;
+  width: 90%;
   border: 2px solid;
   border-radius: 15%;
   background-image: linear-gradient(green, blue);
